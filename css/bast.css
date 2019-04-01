@@ -1,0 +1,91 @@
+div,
+p,
+span,
+input,
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+form,
+img {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* 取消移动端点击背景色 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "微软雅黑", "宋体";
+    color: #666;
+}
+
+input {
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+/* 设置公共样式 */
+
+.l_left {
+    float: left;
+}
+
+.r_right {
+    float: right;
+}
+
+.m_top10 {
+    margin-top: 10px;
+}
+
+.m_bottom10 {
+    margin-bottom: 10px;
+}
+
+.m_left10 {
+    margin-left: 10px;
+}
+
+.m_right10 {
+    margin-right: 10px;
+}
+
+.b_top {
+    border-top: 1px solid #ccc;
+}
+
+.b_left {
+    border-left: 1px solid #ccc;
+}
+
+
+/* 清除浮动 */
+
+.clearflx::before,
+.clearflx::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

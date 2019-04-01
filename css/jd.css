@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+body {
+    font-family: "微软雅黑", "宋体";
+    color: #666;
+}
+
+.clearflx::before,
+.clearflx::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.l_left {
+    float: left;
+}
+
+.r_right {
+    float: right;
+}
+
+.b_top {
+    border-top: 1px solid #ccc;
+}
+
+.b_left {
+    border-left: 1px solid #ccc;
+}
+
+.jd {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #eee;
+}
+
+
+/* 搜索 */
+
+.header {
+    width: 100%;
+    height: 40px;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: red;
+    position: fixed;
+    z-index: 9;
+}
+
+.header h1 {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 56px;
+    height: 20px;
+    background-image: url("images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: 0 -109px;
+}
+
+.header .header_s {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 60px;
+}
+
+.header .header_s::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -60px -109px;
+    position: absolute;
+    top: 11px;
+    left: 78px;
+}
+
+.header .header_s input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.header a {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .jd_bk {
+    width: 800%;
+    position: relative;
+}
+
+.banner .jd_bk li {
+    float: left;
+    width: 12.5%;
+}
+
+.banner .jd_bk li img {
+    display: block;
+    width: 100%;
+}
+
+
+/* 小圆点 */
+
+.banner .indicator {
+    width: 130px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+}
+
+.banner .indicator li {
+    float: left;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 4px;
+}
+
+.banner .indicator .active {
+    background-color: #fff;
+}
+
+
+/* 导航区 */
+
+.nav {
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav ul li img {
+    width: 30%;
+}
+
+.nav ul li p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+/* 掌上秒杀 */
+
+.prouduct {
+    width: 100%;
+}
+
+.productBox {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.productBox .time {
+    width: 100%;
+    height: 30px;
+}
+
+.productBox .time li {
+    float: left;
+}
+
+.productBox .time li:nth-child(1) {
+    width: 20px;
+    height: 25px;
+    background-image: url(uploads/seckill-icon.png);
+    background-size: 20px 25px;
+    margin: 2px 10px 0 5px;
+}
+
+.productBox .time li:nth-child(2) {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: red;
+    margin-right: 10px;
+}
+
+.productBox .time li:nth-child(3),
+.productBox .time li:nth-child(4),
+.productBox .time li:nth-child(5),
+.productBox .time li:nth-child(6),
+.productBox .time li:nth-child(7),
+.productBox .time li:nth-child(8),
+.productBox .time li:nth-child(9),
+.productBox .time li:nth-child(10) {
+    width: 14px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    margin: 8px 1px 0 1px;
+}
+
+.productBox .time li:nth-child(5),
+.productBox .time li:nth-child(8) {
+    background-color: #fff;
+    color: #666;
+}
+
+.productBox .time li:nth-child(11) {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* 京东超市 */
+
+.productBox .jd_sp {
+    width: 100%;
+}
+
+.productBox .jd_sp ul {
+    width: 100%;
+}
+
+.productBox .jd_sp ul li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.productBox .jd_sp li img {
+    width: 50%;
+}
+
+.productBox .jd_sp li p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.productBox {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.productBox .prduct_top {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    margin-left: 30px;
+    position: relative;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.productBox .prduct_top::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    width: 3px;
+    height: 14px;
+    background-color: red;
+}
+
+.productBox .product_bottom {
+    width: 100%;
+}
+
+.productBox .product_bottom ul li {
+    width: 50%;
+}
+
+.productBox .product_bottom ul li img {
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,294 @@
+.jd_layout {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+
+/* 顶部快 */
+
+.jd_header {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    position: fixed;
+    z-index: 100;
+}
+
+
+/* logo */
+
+.jd_logo {
+    width: 56px;
+    height: 23px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: 0 -108px;
+}
+
+
+/* 登录 */
+
+.jd_login {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/* 搜索框 */
+
+.jd_search {
+    width: 100%;
+    height: 100%;
+    padding-left: 75px;
+    padding-right: 50px;
+}
+
+.jd_search input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 30px;
+    color: #666;
+}
+
+.jd_search::before {
+    content: "";
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 78px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -56px -108px;
+}
+
+
+/* 轮播图 */
+
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgBox {
+    /* width: 800%; */
+    position: relative;
+}
+
+.imgBox>li {
+    /* width: 12.5%; */
+    float: left;
+}
+
+.imgBox>li img {
+    float: left;
+    width: 100%;
+}
+
+
+/* 轮播图小圆点 */
+
+.jd_banner .jd_bod {
+    position: absolute;
+    width: 138px;
+    height: 7px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.jd_bod li {
+    width: 7px;
+    height: 7px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 5px;
+}
+
+.jd_bod li.active {
+    background-color: #fff;
+}
+
+
+/* 导航栏 */
+
+.jd_nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.jd_nav>ul {
+    width: 100%;
+}
+
+.jd_nav li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.jd_nav img {
+    width: 50px;
+}
+
+.jd_nav a {
+    line-height: 22px;
+    color: #666;
+}
+
+
+/* 产品块 */
+
+.jd_product {
+    width: 100%;
+}
+
+
+/* 京东超市 */
+
+.jd_supermarket {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 15px;
+    box-shadow: 2px 2px 1px #ccc;
+}
+
+.jd_supermarket h2 {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 30px;
+}
+
+.jd_supermarket h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 3px;
+    height: 12px;
+    background-color: red;
+}
+
+.jd_products {
+    width: 100%;
+}
+
+.jd_products a {
+    width: 50%;
+    display: block;
+}
+
+.jd_products a img {
+    width: 100%;
+    display: block;
+}
+
+
+/* 秒杀 */
+
+.jd_sk {
+    width: 100%;
+}
+
+.jd_sk .jd_sktop {
+    width: 100%;
+}
+
+.jd_sk .jd_sktop ul {
+    width: 100%;
+}
+
+.jd_sk .jd_sktop ul li {
+    float: left;
+}
+
+.jd_sk .jd_sktop ul li:nth-child(1) {
+    width: 16px;
+    height: 20px;
+    background-image: url("../uploads/seckill-icon.png");
+    background-size: 16px 20px;
+    margin: 5px 0 0 10px;
+}
+
+.jd_sk .jd_sktop ul li:nth-child(2) {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 8px;
+    font-size: 14px;
+    color: red;
+}
+
+.jd_sk .jd_sktop ul li:nth-child(3),
+.jd_sk .jd_sktop ul li:nth-child(4),
+.jd_sk .jd_sktop ul li:nth-child(5),
+.jd_sk .jd_sktop ul li:nth-child(6),
+.jd_sk .jd_sktop ul li:nth-child(7),
+.jd_sk .jd_sktop ul li:nth-child(8),
+.jd_sk .jd_sktop ul li:nth-child(9),
+.jd_sk .jd_sktop ul li:nth-child(10) {
+    width: 14px;
+    height: 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin: 8px 2px;
+}
+
+.jd_sk .jd_sktop ul li:nth-child(5),
+.jd_sk .jd_sktop ul li:nth-child(8) {
+    color: #000;
+    background-color: #fff;
+}
+
+.jd_sk .jd_sktop ul li:nth-child(11) {
+    float: right;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.jd_skbottom {
+    width: 100%;
+}
+
+.jd_skbottom ul {
+    width: 100%;
+}
+
+.jd_skbottom ul li {
+    width: 33.33%;
+    float: left;
+    padding: 12px;
+    text-align: center;
+}
+
+.jd_skbottom ul li img {
+    width: 60%;
+}

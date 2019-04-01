@@ -1,0 +1,152 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 主盒子 */
+
+.layout {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 头部 */
+
+.ct_header {
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+    position: absolute;
+}
+
+.ct_back,
+.ct_menu {
+    width: 49px;
+    height: 49px;
+    padding: 15px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-origin: content-box;
+    background-clip: content-box;
+    position: absolute;
+    top: 0;
+}
+
+.ct_back {
+    left: 0;
+    background-position: -24px 0;
+}
+
+.ct_menu {
+    right: 0;
+    background-position: -60px 0;
+}
+
+.ct_search {
+    width: 100%;
+    height: 50px;
+    padding: 0 60px;
+}
+
+.ct_search input {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 8px;
+}
+
+
+/* 内容盒子 */
+
+.ct_content {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.ct_contentLeft {
+    width: 100px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.ct_contentLeft ul {
+    transition: top 0.2s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ct_contentLeft ul li {
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.ct_contentLeft ul li a {
+    width: 100%;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    background-color: #eee;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+}
+
+.ct_contentLeft .active a {
+    color: red;
+    background-color: #fff;
+}
+
+.ct_contentRight {
+    height: 100%;
+    margin-left: 100px;
+    display: flex;
+    /*沿 Y 轴*/
+    flex-direction: column;
+}
+
+.ct_rImg img {
+    width: 100%;
+}
+
+.ct_contentRight h2 {
+    width: 100%;
+    height: 44px;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 50px;
+    color: black;
+    border-bottom: 1px solid #666;
+}
+
+.ct_hotCategory {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    /* 滚屏需加定位 */
+    overflow: hidden;
+    position: relative;
+}
+
+.ct_hotCategory ul li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ct_hotCategory li p {
+    color: #333
+}
